@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: hotel_development
-  username: lenin
+  username: denis
   password: asdf
 
   # The specified database role being used to connect to postgres.

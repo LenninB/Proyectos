@@ -1,0 +1,14 @@
+<% if notice %>
+	<p class="alert alert-success" id="alert"><%= notice %></p>
+<% end %>
+<% if alert %>
+	<p class="alert alert-danger" id="alert"><%= alert %></p>
+<% end %>
+<% if current_user.present? %>
+	<%= link_to "Mostrar habitaciones",rooms_path  %>
+	<%= link_to "Cerrar Sesión",destroy_user_session_path, method: :delete  %>
+<% else %>
+	<%= link_to "Iniciar Sesión",new_user_session_url  %>
+<% end %>
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
